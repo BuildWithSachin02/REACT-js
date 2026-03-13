@@ -4,9 +4,9 @@ import CountUp from "react-countup";
 
 const Hero = ()=>{
     return<>
-        <div className="container">
+        <div className="container hero-container">
             <div className="row">
-                <div className="col-4 left-fixed">
+                <div className="col-4">
                     <div className="profile-container">
                         <img className="pro-img" src={profile} alt="" />
                         <div className="bio-container">

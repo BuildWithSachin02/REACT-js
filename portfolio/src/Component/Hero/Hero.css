@@ -12,13 +12,15 @@ display:flex;
 /* LEFT PROFILE */
 
 .left-fixed{
-position:fixed;
+/* position:fixed; */
 left:80px;
 top:120px;
 }
-
+.hero-container{
+  margin-top: 90px;
+}
 .profile-container{
-height:640px;
+height:550px;
 width:410px;
 background:white;
 text-align:center;
@@ -55,54 +57,36 @@ margin-top:40px;
 color:#F46C38;
 font-size:23px;
 }
-
-/* RIGHT CONTENT */
-
-.right-container{
-margin-left:520px;
-padding-top:120px;
-}
-
 .soft{
 font-size:120px;
 font-weight:800;
 color:white;
 line-height:0.9;
 }
-
 .engineer{
 font-size:120px;
 font-weight:800;
 color:rgba(255,255,255,0.25);
 line-height:0.9;
 }
-
 .hero-description{
 margin-top:40px;
 width:520px;
 font-size:18px;
 color:#9c9c9c;
 }
-
 .exprecience-container{
 display:flex;
 gap:100px;
 margin-top:60px;
 }
-
 .exprecience-container h1{
 font-size:60px;
 color:white;
 margin:0;
 }
-
 .exprecience-container p{
 font-size:14px;
 color:#9c9c9c;
 margin:0;
-}
-.left-fixed{
-position:fixed;
-left:80px;
-top:120px;
 }

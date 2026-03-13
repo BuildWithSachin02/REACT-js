@@ -1,8 +1,17 @@
+body{
+background:#0b0b0b;
+color:white;
+font-family:Segoe UI;
+}
+
 .layout{
 display:flex;
 }
 
-.right-section{
-margin-left:520px;
-width:100%;
+/* RIGHT SIDE */
+
+.main-content{
+margin-left:420px;
+width:calc(100% - 420px);
+padding:100px 60px;
 }
