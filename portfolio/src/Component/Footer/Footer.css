@@ -5,4 +5,8 @@
 .button-footer{
     background-color: #FF4500;
     border: none;
+    width: 100%;
+}
+.button-footer:hover{
+    background-color: #FF4500;
 }

@@ -9,8 +9,19 @@ const Footer = () => {
                 <h4>
                     Sachin Yadav
                 </h4>
-                <p>sachinyadav.webdev404@gmail.com</p>
-                <a href="+919054387845">+91 9054387845</a>
+                <p>
+                    Full Stack Web Developer
+                </p>
+                <p>
+                    I build modern, fast and SEO-friendly websites for businesses.
+                </p>
+                <div className="text-center gap-3 d-flex justify-content-center">
+                    <a href="tel:+919054387845"><i class="bi bi-telephone icons"></i></a>
+                    <a href="https://wa.me/919054387845?text=Hello%20Sachin%20I%20want%20to%20discuss%20a%20project"><i class="bi bi-whatsapp icons"></i></a>
+                    <a href="https://www.instagram.com/sachinndev333/"><i class="bi bi-instagram icons"></i></a>
+                    <a href="https://www.linkedin.com/in/sachin-yadav-92278b3a1/"><i class="bi bi-linkedin icons"></i></a>
+
+                </div>
           </div>
           <div className="col-8">
             <form className="footerform p-3 mb-5">
@@ -54,7 +65,7 @@ const Footer = () => {
                 </div>
 
               </div>
-              <button type="submit" className="btn btn-primary button-footer">
+              <button type="submit" className="btn  button-footer">
                 Submit
               </button>
             </form>
