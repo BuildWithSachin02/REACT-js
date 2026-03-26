@@ -5,6 +5,7 @@ import Tool from "./Component/Tool/Tool";
 import "./App.css"
 import Skill from "./Component/Skill/Skill";
 import Footer from "./Component/Footer/Footer";
+import Contact from "./Component/Footer/Footer";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <Project/>
       <Tool/>
       <Skill/>
-      <Footer/>
+      <Contact/>
     </>
   );
 };
