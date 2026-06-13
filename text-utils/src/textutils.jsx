@@ -2,7 +2,7 @@ import React, {useEffect,useState} from "react"
 
 const Textutils = () => {
     useEffect(()=>{
-       setText(JSON.parse(localStorage.getItem("text")) ?? "");
+    setText(JSON.parse(localStorage.getItem("text")) ?? "");
     setCount(JSON.parse(localStorage.getItem("count")) ?? 0);
     setWords(JSON.parse(localStorage.getItem("word")) ?? 0);
     setSpeed(JSON.parse(localStorage.getItem("speed")) ?? 0);
@@ -61,7 +61,7 @@ const Textutils = () => {
             </button>
             <button type="button" className="btn btn-danger"
                 onClick={()=>{
-                    setWords(text.split(" ").length)
+                    setWords(text.split(" ").length)//whe i enter in input like this i am sachin = new array each strore new element ["i", "am", "sachin"].length = >3 
                     localStorage.setItem("word",JSON.stringify(text.split(" ".length)));
                 }}
             >
