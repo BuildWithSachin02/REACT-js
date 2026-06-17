@@ -1,14 +1,16 @@
-import React from "react";
+import { Link, useNavigate } from "react-router";
+
 
 export default function Navbar() {
+  const Navigate = useNavigate();
   return (
     <>
-      <div className="container">
-        <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="/home">
+      <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary mb-4">
+          <div className="container">
+            <Link to="/home" className="navbar-brand" href="#">
               SachinDev
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -20,27 +22,27 @@ export default function Navbar() {
             >
               <span className="navbar-toggler-icon" />
             </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className="collapse navbar-collapse " id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/home">
+                  <Link to="/home" className="nav-link active" aria-current="page">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/About">
+                  <Link to="/about" className="nav-link" href="#">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="Skill">
+                  <Link to="/skill" className="nav-link" href="#">
                     Skill
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/contact" aria-disabled="true">
+                  <Link to="/contact" className="nav-link" aria-disabled="true">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
