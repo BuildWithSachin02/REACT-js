@@ -1,21 +1,26 @@
+import React, {useState} from "react";
 import Navbar from "../componet/Navbar";
 import Footer from "./Footer";
 
 export default function Contact() {
+
+                
+
+
   return (
     <>
       <Navbar />
-
       <div className="container mt-5">
         <h1 className="text-center mb-4">Contact Me</h1>
 
         <div className="row justify-content-center">
           <div className="col-md-8">
             <div className="card shadow p-4">
-              <form>
+              <form >
                 <div className="mb-3">
                   <label className="form-label">Full Name</label>
                   <input
+                 
                     type="text"
                     className="form-control"
                     placeholder="Enter your name"
@@ -25,6 +30,7 @@ export default function Contact() {
                 <div className="mb-3">
                   <label className="form-label">Email Address</label>
                   <input
+                 
                     type="email"
                     className="form-control"
                     placeholder="Enter your email"
@@ -34,6 +40,7 @@ export default function Contact() {
                 <div className="mb-3">
                   <label className="form-label">Subject</label>
                   <input
+                  
                     type="text"
                     className="form-control"
                     placeholder="Enter subject"
@@ -43,6 +50,7 @@ export default function Contact() {
                 <div className="mb-3">
                   <label className="form-label">Message</label>
                   <textarea
+                 
                     className="form-control"
                     rows="5"
                     placeholder="Write your message..."
