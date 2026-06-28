@@ -1,0 +1,36 @@
+{
+  "dummy-users": [
+    {
+      "name": "sachin yadav",
+      "age": 23,
+      "mob": 9054387845,
+      "course": "full-stack devloper",
+      "id": "-LHtwrZJtBM"
+    }
+  ],
+  "users": [
+    {
+      "first": "simpii123",
+      "last": "yadav",
+      "email": "sonamyadav@gmail.com",
+      "phone": 134567890,
+      "state": "gujarat",
+      "city": "surat",
+      "age": 26,
+      "date": "2000-10-02",
+      "id": "1w80ixy48DU"
+    },
+    {
+      "first": "Raj",
+      "last": "yadav",
+      "email": "sachinyadav",
+      "phone": 1234567890,
+      "state": "GUJARAT",
+      "city": "Surat",
+      "age": 23,
+      "date": "2003-10-02",
+      "id": "H93LXJroY1E"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
