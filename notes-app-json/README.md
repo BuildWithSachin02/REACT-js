@@ -1,6 +1,6 @@
 # 📝 Notes App
 
-<img width="707" height="500" alt="notes-app" src="https://github.com/user-attachments/assets/9593ae16-0f75-4164-8f24-ec7bff7c2b40" />
+<img width="707" height="1300" alt="notes-app" src="https://github.com/user-attachments/assets/9593ae16-0f75-4164-8f24-ec7bff7c2b40" />
 
 
 
