@@ -1,0 +1,25 @@
+{
+  "notes": [
+    {
+      "task": "zsxdcfvb",
+      "description": "sdfgbhn",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJ1uwmjRW-mwhB7MNlrOeJ91g5D5tQNAb_8PQ6O_ddw&s=10",
+      "textColor": "#dad2d2",
+      "backGroundColor": "#c90d0d",
+      "createDate": "7/1/2026",
+      "createTime": "10:35:27 AM",
+      "id": "wJtL7ujD3EY"
+    },
+    {
+      "task": "asdfgbhnjhgs",
+      "description": "dfgbhnbgfd",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-4ZQ_BD_kE88wcEA43ASNMNFCP26XtnyO6gd2bAQJig&s=10",
+      "createDate": "7/1/2026",
+      "createTime": "10:54:17 AM",
+      "backGroundColor": "#B2EBF2",
+      "textColor": "#000000",
+      "id": "-fVYjzHEn3E"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
