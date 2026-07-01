@@ -1,0 +1,17 @@
+{
+    "user":[
+        {
+            "name":"sachin",
+            "lastName":"yadav",
+            "mail-id":"yadavsachin3166@gmail.com",
+            "mob":"9054387845"
+        }
+    ],
+    "products":[
+        {
+            "products-name":"apple 14 plus",
+            "weight":"600gm",
+            "brand":"apple"
+        }
+    ]
+}
