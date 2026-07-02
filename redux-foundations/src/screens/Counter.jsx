@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { increament, decrement } from "../features/Todo/todosSlice";
-
+import { increament,decrement,remove } from "../features/todo/todosSlice.js";
 export default function Counter() {
   const dispatch = useDispatch();
   const count = useSelector((state) => state.counter.count);
@@ -13,6 +12,7 @@ export default function Counter() {
         <div className="d-flex gap-3 justify-content-center">
           <button onClick={() => dispatch(increament())}>++</button>
           <button onClick={() => dispatch(decrement())}>--</button>
+          <button onClick={() => dispatch(remove())}>zero</button>
         </div>
       </div>
     </>
