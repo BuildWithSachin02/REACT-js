@@ -1,11 +1,10 @@
 import React from 'react'
+import Counter from './screens/Counter'
 
 export default function App() {
   return (
     <>
-      <div className='container text-center'>
-        <h1>React Redux ToolKit</h1>
-      </div>
+      <Counter/>
     </>
   )
 }

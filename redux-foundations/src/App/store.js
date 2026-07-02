@@ -1,3 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
+import CounterReducer from "../features/todo/todosSlice"
 
-export const store = configureStore({})//always he will be add in argument with pass objects.
+const store = configureStore({
+    reducer: {
+        counter: CounterReducer,
+
+    }
+})//always he will be add in argument with pass objects.
+
+export default store;
