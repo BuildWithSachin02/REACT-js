@@ -1,10 +1,28 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import CardUserInfo from "../components/CardUserInfo";
 import { useDispatch, useSelector } from "react-redux";
-import { handleAddUsersDetail } from "../Redux/Slices/crud";
+import { handleAddUsersDetail, handleUpdateUser } from "../Redux/Slices/crud";
+
 export default function Home() {
   const dispatch = useDispatch();
-  const allUsers = useSelector((state) => state.formCrud);
+  const allUsers = useSelector((state) => state.formCrud.allUsers);
+  const [editIndex, setEditIndex] = useState(null);
+
+  useEffect(() => {
+    //  Fill form
+    //       ↓
+    // Click Submit
+    //       ↓
+    // dispatch()
+    //       ↓
+    // Reducer updates allUsers
+    //       ↓
+    // useEffect sees allUsers changed
+    //       ↓
+    // Save to localStorage
+    localStorage.setItem("users", JSON.stringify(allUsers));
+  }, [allUsers]);
+
   // console.log(allUsers);
   //1. make local state to use handle all input fields
   const [formData, setFormData] = useState({
@@ -27,6 +45,7 @@ export default function Home() {
     //suppose i am in lastName input fiels so then e.target object they automatic
     //add on the lastName key : value(e.target)
     const { name, value } = e.target;
+
     setFormData({
       ...formData, //spread all coping
       [name]: value, //e.target.name = e.target.value
@@ -35,8 +54,39 @@ export default function Home() {
   //handle submit form how we call in this when user press buttons
   const handleSubmitForm = (e) => {
     e.preventDefault();
-    dispatch(handleAddUsersDetail(formData));
+    // console.log(formData);
+    if(editIndex === null){
+      //add new user
+      alert("Your Regitrations form is saved in our server")
+      dispatch(handleAddUsersDetail(formData));
+    }else{
+      //update exits users
+      alert("Your Form is Updated now")
+      dispatch(handleUpdateUser({
+        index:editIndex,
+        user:formData,
+      }))
+      setEditIndex(null)
+    }
     // console.log(formData)
+    // setFormData({});when i use this so after i fill the form and first is add perfectly and then
+    //when this run so last object and value are going to remove this means of line
+    //so dont use it. so now same we have to add on like setformdata({name:""})like we have to add this.
+    setFormData({
+      //so never use like setformdata({never use like this this is going to be kill our keys and value})
+      firstName: "",
+      lastName: "",
+      fatherName: "",
+      motherName: "",
+      phoneNumber: "",
+      img: "",
+      email: "",
+      password: "",
+      address: "",
+      city: "",
+      state: "",
+      zip: "",
+    });
   };
 
   return (
@@ -99,11 +149,13 @@ export default function Home() {
             />
           </div>
           <div className="input-group">
+            <span className="input-group-text">links</span>
             <input
               onChange={handleChange}
-              value={formData.img}
+              // value={formData.img}File inputs should NEVER have a value prop.for security reasons
               name="img"
-              type="file"
+              type="url"
+              value={formData.img}
               className="form-control"
               id="inputGroupFile04"
               aria-describedby="inputGroupFileAddon04"
@@ -216,7 +268,7 @@ export default function Home() {
                 type="submit"
                 className="btn btn-primary w-100"
               >
-                Sign in
+                {editIndex === null ? "Add User" : "Update User"}
               </button>
             </div>
           </form>
@@ -225,7 +277,7 @@ export default function Home() {
       {allUsers.length == 0 ? (
         <h3>Our Data is Empty Fill The Form!</h3>
       ) : (
-        <CardUserInfo />
+        <CardUserInfo setFormData={setFormData} setEditIndex={setEditIndex} />
       )}
     </>
   );

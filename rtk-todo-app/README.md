@@ -1,16 +1,231 @@
-# React + Vite
+# 🚀 React Redux CRUD Form Registration
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **CRUD (Create, Read, Update, Delete)** application built with **React.js**, **Redux Toolkit**, and **Bootstrap 5**. The application allows users to register their information, display it as beautiful cards, edit existing records, delete records, and persist data using **Local Storage**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Preview
 
-## React Compiler
+> Add your project screenshot here.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```md
+![Project Screenshot](./src/assets/project-preview.png)
+```
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- ✅ Create new user records
+- ✅ Display users in responsive Bootstrap cards
+- ✅ Update/Edit existing user information
+- ✅ Delete users with confirmation
+- ✅ Persistent data using Local Storage
+- ✅ Fully Responsive UI
+- ✅ Form Validation
+- ✅ Redux Toolkit State Management
+- ✅ Dynamic Card Rendering
+- ✅ Random Card Color Support
+
+---
+
+## 🛠️ Technologies Used
+
+- React.js
+- Redux Toolkit
+- React Redux
+- Bootstrap 5
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── components/
+│   └── CardUserInfo.jsx
+│
+├── Redux/
+│   ├── store/
+│   │     └── store.js
+│   │
+│   └── Slices/
+│         └── crud.js
+│
+├── screens/
+│   └── Home.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## 📌 Features Included
+
+### ➜ Create User
+
+- Register user details
+- Store data in Redux Store
+- Automatically save data to Local Storage
+
+---
+
+### ➜ Read User
+
+- Display all registered users
+- Responsive Bootstrap Cards
+
+---
+
+### ➜ Update User
+
+- Click Edit button
+- Auto-fill form with selected user data
+- Update information
+- Save updated data
+
+---
+
+### ➜ Delete User
+
+- Confirmation before deleting
+- Delete selected user
+- Automatically update Local Storage
+
+---
+
+## 💾 Local Storage
+
+All user information is automatically saved inside the browser.
+
+```
+Key:
+users
+```
+
+Data remains available even after refreshing the page.
+
+---
+
+## 📋 Form Fields
+
+- First Name
+- Last Name
+- Father Name
+- Mother Name
+- Phone Number
+- Image URL
+- Email
+- Password
+- Address
+- City
+- State
+- Zip Code
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/BuildWithSachin02/react-redux-crud.git
+```
+
+Go to project directory
+
+```bash
+cd react-redux-crud
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Packages Used
+
+```bash
+npm install @reduxjs/toolkit
+npm install react-redux
+npm install bootstrap
+npm install bootstrap-icons
+```
+
+---
+
+## 📷 Future Improvements
+
+- Upload image using File Upload
+- Search Users
+- Filter Users
+- Pagination
+- Form Validation using React Hook Form
+- Toast Notifications
+- Dark/Light Theme
+- JSON Server API Integration
+- Authentication
+
+---
+
+## 📚 What I Learned
+
+- React Hooks
+- useState
+- useEffect
+- Redux Toolkit
+- createSlice()
+- configureStore()
+- useDispatch()
+- useSelector()
+- CRUD Operations
+- Local Storage
+- Bootstrap Components
+- React Forms
+
+---
+
+## 👨‍💻 Author
+
+**Sachin Yadav**
+
+Frontend Developer | React Developer | WordPress Developer
+
+### Portfolio
+
+https://sachinyadav.navyantravels.com/
+
+### GitHub
+
+https://github.com/BuildWithSachin02
+
+### LinkedIn
+
+https://www.linkedin.com/in/sachin-yadav-8847703a1/
+
+---
+
+## ⭐ If you like this project
+
+Give this repository a ⭐ on GitHub.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
