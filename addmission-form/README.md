@@ -2,7 +2,7 @@
 
 A simple Admission Form application built with **React.js**, **Redux Toolkit**, **Bootstrap**, **Axios**, and **JSON Server**. This project demonstrates CRUD (Create, Read, Update, Delete) operations using a locally hosted REST API.
 
----
+----
 
 ## 🚀 Features
 
