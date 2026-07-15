@@ -14,7 +14,7 @@ export const userFetch = createAsyncThunk("users/fetch", async () => {//call API
 /////////////////////////POST-API////////////////////////////////////////////////////////////
 export const userPost = createAsyncThunk("users/post", async (user) => {//POST-API
     const res = await axios.post("http://localhost:3000/userAuth",user)//POST-API
-    console.log(res.data)
+    // console.log(res.data)
     return res.data;//POST-API
 })
 /////////////////////////POST-API////////////////////////////////////////////////////////////

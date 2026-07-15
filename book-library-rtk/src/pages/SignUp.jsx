@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { userPost } from "../App/featuresSlicecs/authSlices";
+import { userPost, userFetch } from "../App/featuresSlicecs/authSlices";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useRef, useState } from "react";
 import { current } from "@reduxjs/toolkit";
@@ -9,18 +9,31 @@ export default function SignUp() {
   const [isUserEnterPasswordFields, setIsUserEnterPasswordFields] =
     useState(false);
   const [isInvalidEmailAdd, setInvalidEmailAdd] = useState(false);
+  const [ispasswordWeak, setPasswordWeak] = useState(false);
   const dispatch = useDispatch();
   const { users } = useSelector((state) => state.users);
+  // console.log(users)
   const userEmail = useRef("");
   const userPassword = useRef("");
   const userName = useRef("");
   const userSetpassword = useRef("");
 
-  const handlePostUsers = (users) => {
+  useEffect(()=>{
+    dispatch(userFetch());//why i need to call userfetch bcz i want to check user is exits or not that why i need this one
+  },[dispatch])
 
+  const handlePostUsers = (users) => {
+    let userNameRef = userName.current.value;
+    let email = userEmail.current.value;
+    let password = userPassword.current.value;
+    let setPassword = userSetpassword.current.value;
+
+    if (!userNameRef || !email || !setPassword || !password) {
+      alert("enter the required fields");
+      return;
+    }
     /////////////////////////////////////////1.check a email validation ////////////////////////////////
     //1.check email have regex or not ??
-    let email = userEmail.current.value;
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       //so .test using for to check a if email have write format then we accept and email then we add in our json and test is giving a boolean value and if email have @.com then he return a true value so this good and what if he give false value then he give a alert
@@ -28,22 +41,31 @@ export default function SignUp() {
       // alert("invalid email address!");
       return;
     }
-    /////////////////////////////////////////1.check a email validation ////////////////////////////////
+    /////////////////////////////////////////1.check a email validation-END ////////////////////////////////
 
     /////////////////////////////////////////2.check both password validation //////////////////////////
     //2.check what user is typeing in password fields
     //a.first have to check a both of password are matched and if both password are not matched for give a alert
     //a.must password have a length of 8-16 and unique password and have a special charcters
-    let password = userPassword.current.value;
-    let setPassword = userSetpassword.current.value;
-    let passwordRegex =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.#])[A-Za-z\d@$!%*?&.#]{8,}$/
-    if(!passwordRegex.test(password && setPassword)){
-      alert("invalid password and mismatched!")
-      return;//as you can see test function only return boolean value
+    let passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.#])[A-Za-z\d@$!%*?&.#]{8,}$/;
+    if (!passwordRegex.test(setPassword) || !passwordRegex.test(password)) {
+      // console.log(password, setPassword)
+      setPasswordWeak(!ispasswordWeak);
+      alert("your password is weak make a strong password!");
+      return; //as you can see test function only return boolean value
     }
+    //2.check both password is match or not ?? i want to both password have to same
+    if (password !== setPassword) {
+      alert("both passwords are not matched!");
+      return;
+    }
+    /////////////////////////////////////////2.check both password validation-END //////////////////////////
 
-    /////////////////////////////////////////2.check both password validation //////////////////////////
-
+    if(email !== users.email){
+      alert("email is already register!")
+      return;
+    }
     // console.log(userEmail, userName, userPassword, userSetpassword);
     if (
       !userName.current.value ||
@@ -55,7 +77,6 @@ export default function SignUp() {
     } else {
       dispatch(
         userPost({
-          ...users,
           name: userName.current.value,
           email: userEmail.current.value,
           password: userPassword.current.value,
@@ -66,6 +87,10 @@ export default function SignUp() {
       userEmail.current.value = "";
       userSetpassword.current.value = "";
       userPassword.current.value = "";
+      setHide(false);
+      setInvalidEmailAdd(false);
+      setIsUserEnterPasswordFields(false);
+      setPasswordWeak(false);
     }
   };
   return (
@@ -102,7 +127,7 @@ export default function SignUp() {
             <input
               ref={userSetpassword}
               type="text"
-              className="form-control bg-dark text-white"
+              className={`form-control bg-dark text-white ${ispasswordWeak ? "is-invalid" : ""}`}
               id="floatingPassword"
               placeholder="Password"
             />
@@ -111,12 +136,12 @@ export default function SignUp() {
             </label>
           </div>
         </div>
-        <div className="form-floating">
+        <div className="form-floating has-validation">
           <div className="form-floating">
             <input
               ref={userPassword}
               type={`${isHide ? "text" : "password"}`}
-              className="form-control bg-dark text-white"
+              className={`form-control bg-dark text-white ${ispasswordWeak ? "is-invalid" : ""}`}
               id="floatingPassword"
               placeholder="Password"
               onChange={(e) =>
@@ -127,12 +152,13 @@ export default function SignUp() {
               Confirm Password
             </label>
           </div>
+          <div className="invalid-feedback">Please choose a username.</div>
           <div>
             {isUserEnterPasswordFields ? (
               <i
                 style={{
                   position: "absolute",
-                  right: "15px",
+                  right: "40px",
                   top: "32px",
                   transform: "translateY(-50%)",
                   cursor: "pointer",

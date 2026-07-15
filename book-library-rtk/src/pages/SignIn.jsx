@@ -10,7 +10,7 @@ export default function SignIn() {
   const dispatch = useDispatch();
   const Navigate = useNavigate();
   const { users } = useSelector((state) => state.users);
-  //   console.log(users );
+  // console.log(users );
   //first of all we have to use a why ? useEffect bcz i want to check if user is signup means is user is exits or not ? if yes then he can accses the home if not so he have to signup first
   //so reason is we have to call API why in our data store the whole users details ?? that the
   // reason we have call this userfetch
@@ -23,20 +23,19 @@ export default function SignIn() {
   const userEmail = useRef("");
   const userPassword = useRef("");
 
-  const handleExitsUserOrNot = (users) => {
-    // console.log(user)
-    users.map((user) => {
-      console.log(user);
-      if (
-        userEmail.current.value == user.email &&
-        userPassword.current.value == user.password
-      ) {
-        alert("successfully login!");
-        Navigate("/home");
-      } else {
-        alert("sign up");
-      }
+  const handleExitsUserOrNot = () => {
+    const email = userEmail.current.value;
+    const password = userPassword.current.value;
+    const exitsUsers = users.some((user) => {
+      //when user is exits and he add his email and password right and he can go on home.
+      return email === user.email && password === user.password;
     });
+    if(exitsUsers){
+      alert("login Successfully")
+      Navigate("/home")
+    }else{
+      alert("invalid email or password!")
+    }
   };
 
   return (
@@ -89,7 +88,7 @@ export default function SignIn() {
           </div>
           <div className="singInButton">
             <button
-              onClick={() => handleExitsUserOrNot(users)}
+              onClick={() => handleExitsUserOrNot()}
               className="btn btn-success mt-3 w-100"
             >
               SIGN IN
