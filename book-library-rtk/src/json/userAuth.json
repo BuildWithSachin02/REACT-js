@@ -1,46 +1,28 @@
 {
   "userAuth": [
     {
-      "name": "Sachin Yadav",
-      "email": "sachin@gmail.com",
+      "name": "Sachin",
+      "email": "yadavsachin3166@gmail.com",
       "password": "Sachin@#123",
-      "id": "vIgbvBKwITg"
+      "id": "27lvChH3SlI"
     },
     {
-      "name": "nitin",
-      "email": "nitin@gmail.com",
-      "password": "Nitin@#123",
-      "id": "M2orlvBRDfk"
+      "name": "yadavsachin3166@gmail.com",
+      "email": "yadavsachin3166@gmail.com",
+      "password": "Sachin@#123",
+      "id": "1xDE-QihRoQ"
     },
     {
-      "name": "om bagal",
-      "email": "om@gmail.com",
-      "password": "Asdf@#123",
-      "id": "SVJ0J1Qjngg"
+      "name": "yadavsachin3166@gmail.com",
+      "email": "yadavsachin3166@gmail.com",
+      "password": "Sachin@#123",
+      "id": "fWCuijFlaEE"
     },
     {
-      "name": "sonam yadav",
-      "email": "sonam@gmail.com",
-      "password": "Sonam@#123",
-      "id": "5QmXjBpOKds"
-    },
-    {
-      "name": "nilam",
-      "email": "nilam@gmail.com",
-      "password": "Nilam@#123",
-      "id": "Xd7NrahTVnw"
-    },
-    {
-      "name": "Komal",
-      "email": "koma@gmail.com",
-      "password": "Komal@#123",
-      "id": "Z6IwPCfxRjQ"
-    },
-    {
-      "name": "Virat Kohli",
-      "email": "virat@gmail.com",
-      "password": "Virat@#123",
-      "id": "9X7Sc4BPu14"
+      "name": "Sachin Yadav",
+      "email": "vikram@gmail.com",
+      "password": "Sachin@#11234",
+      "id": "BGXNwPR3A6E"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

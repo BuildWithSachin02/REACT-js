@@ -26,7 +26,9 @@ const AuthSlices = createSlice({
     initialState: {
         users: [],
         error: null,
-        loader: false
+        loader: false,
+        // currentUser:null,
+        // isAuthenticated:false
     },
     reducers: {
 
@@ -37,6 +39,8 @@ const AuthSlices = createSlice({
         })
         builder.addCase(userFetch.fulfilled, (state, action) => {//GET USER - FULFILLED
             state.loader = false
+            // state.currentUser = matchedUser
+            // state.isAuthenticated = true
             state.users = action.payload
             // console.log(action.payload)
         }) //GET-DATA-API

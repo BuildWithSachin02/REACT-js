@@ -6,9 +6,9 @@ export default function Navbar() {
       <div>
         <nav className="navbar navbar-expand-lg  border-bottom border-body " data-bs-theme="dark">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-              Books Library
-            </a>
+            <p className="navbar-brand mb-0 fs-3">
+              Books Library Management
+            </p>
             <button
               className="navbar-toggler"
               type="button"
@@ -24,7 +24,7 @@ export default function Navbar() {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a className="nav-link" aria-current="page" href="#">
                     Home
@@ -71,8 +71,8 @@ export default function Navbar() {
                     Disabled
                   </a>
                 </li>
-              </ul>
-              <form className="d-flex" role="search">
+              </ul> */}
+              <form className="d-flex justify-content-end ms-auto" role="search">
                 <input
                   className="form-control me-2"
                   type="search"

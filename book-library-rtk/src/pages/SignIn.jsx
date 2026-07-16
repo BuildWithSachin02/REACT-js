@@ -30,17 +30,23 @@ export default function SignIn() {
       //when user is exits and he add his email and password right and he can go on home.
       return email === user.email && password === user.password;
     });
-    if(exitsUsers){
-      alert("login Successfully")
-      Navigate("/home")
-    }else{
-      alert("invalid email or password!")
+    if (exitsUsers) {
+      alert("login Successfully");
+      localStorage.setItem("isLoggedIn", "true"); //now when user is logged in then i want to check them
+      Navigate("/home");
+    } else if (email == "" || password == "") {
+      alert("enter the reqiured fields!");
+      return;
+    } else {
+      alert(
+        "email and password is invalid make sure you already register or not!",
+      );
     }
   };
 
   return (
     <>
-      <div className="d-flex justify-content-center mt-5">
+      <div className="d-flex justify-content-center mt-5 container">
         <div className="signIn-container mt-5 border p-5 w-50 rounded">
           <h3 className="mb-4">Sign in to your account</h3>
           <div className="form-floating mb-3">

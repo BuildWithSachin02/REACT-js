@@ -18,9 +18,9 @@ export default function SignUp() {
   const userName = useRef("");
   const userSetpassword = useRef("");
 
-  useEffect(()=>{
-    dispatch(userFetch());//why i need to call userfetch bcz i want to check user is exits or not that why i need this one
-  },[dispatch])
+  useEffect(() => {
+    dispatch(userFetch()); //why i need to call userfetch bcz i want to check user is exits or not that why i need this one
+  }, [dispatch]);
 
   const handlePostUsers = (users) => {
     let userNameRef = userName.current.value;
@@ -62,8 +62,9 @@ export default function SignUp() {
     }
     /////////////////////////////////////////2.check both password validation-END //////////////////////////
 
-    if(email !== users.email){
-      alert("email is already register!")
+    const emailExits = users.some((user) => user.email === email);
+    if (emailExits) {
+      alert("Email is already registered. Please Sign In.");
       return;
     }
     // console.log(userEmail, userName, userPassword, userSetpassword);
@@ -94,7 +95,7 @@ export default function SignUp() {
     }
   };
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center container">
       <div className="border p-5 w-50 text-white mt-5">
         <h3 className="mb-3">Sign Up Page</h3>
         <div className="form-floating mb-3">
