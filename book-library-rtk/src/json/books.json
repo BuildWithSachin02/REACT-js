@@ -1,22 +1,7 @@
 {
   "books": [
     {
-      "id": 1,
-      "name": "Atomic Habits",
-      "author": "James Clear",
-      "category": "Self Help",
-      "price": 499,
-      "publishYear": 2018,
-      "publisher": "Avery",
-      "language": "English",
-      "isbn": "9780735211292",
-      "pages": 320,
-      "stock": 15,
-      "rating": 4.9,
-      "image": "/images/books/atomic-habits.jpg"
-    },
-    {
-      "id": 2,
+      "id": "2",
       "name": "Rich Dad Poor Dad",
       "author": "Robert T. Kiyosaki",
       "category": "Finance",
@@ -28,10 +13,10 @@
       "pages": 336,
       "stock": 18,
       "rating": 4.8,
-      "image": "/images/books/rich-dad-poor-dad.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT2Zk6v_JxxB08JlN5xIkLORzjrUhJwBoVDb76jTL3Hg&s=10"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "The Psychology of Money",
       "author": "Morgan Housel",
       "category": "Finance",
@@ -43,10 +28,10 @@
       "pages": 256,
       "stock": 20,
       "rating": 4.8,
-      "image": "/images/books/the-psychology-of-money.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4e8GZDve-S3E7Z9MWbnBg6DxpIBHTSNmmSdMV6wip4g&s=10"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "The Alchemist",
       "author": "Paulo Coelho",
       "category": "Novel",
@@ -58,10 +43,10 @@
       "pages": 208,
       "stock": 22,
       "rating": 4.7,
-      "image": "/images/books/the-alchemist.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKObImlUAPvpOpErbVvkMH2XDR1Bopzwj8WB0LlZMPvg&s=10"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Think and Grow Rich",
       "author": "Napoleon Hill",
       "category": "Business",
@@ -73,10 +58,10 @@
       "pages": 320,
       "stock": 12,
       "rating": 4.7,
-      "image": "/images/books/think-and-grow-rich.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxmbuqLcwlJvXVpsDbvfJXm2oE5aAwVxYL4Nz_DYwzA&s=10"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Deep Work",
       "author": "Cal Newport",
       "category": "Productivity",
@@ -88,10 +73,10 @@
       "pages": 304,
       "stock": 10,
       "rating": 4.7,
-      "image": "/images/books/deep-work.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTueyaNTym2bcQkNsgo_7k7mPN66ege0vhAXGjM6Ngd1w&s=10"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Ikigai",
       "author": "Héctor García & Francesc Miralles",
       "category": "Self Help",
@@ -103,10 +88,10 @@
       "pages": 208,
       "stock": 14,
       "rating": 4.7,
-      "image": "/images/books/ikigai.jpg"
+      "image": "data:image/jpeg;base64,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"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "The Power of Now",
       "author": "Eckhart Tolle",
       "category": "Spiritual",
@@ -118,10 +103,10 @@
       "pages": 236,
       "stock": 11,
       "rating": 4.6,
-      "image": "/images/books/the-power-of-now.jpg"
+      "image": "data:image/jpeg;base64,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"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Clean Code",
       "author": "Robert C. Martin",
       "category": "Programming",
@@ -133,10 +118,10 @@
       "pages": 464,
       "stock": 9,
       "rating": 4.9,
-      "image": "/images/books/clean-code.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvw-YQG7tCt1KjTi0rX-f9kpHuqwat16MLvKRFtpMq7Q&s=10"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Eloquent JavaScript",
       "author": "Marijn Haverbeke",
       "category": "Programming",
@@ -148,10 +133,10 @@
       "pages": 472,
       "stock": 13,
       "rating": 4.8,
-      "image": "/images/books/eloquent-javascript.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFNViQ63x8PlCBdyF1aHuGpVD8cKLRqAJMFyrilcT7Lg&s=10"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "JavaScript: The Good Parts",
       "author": "Douglas Crockford",
       "category": "Programming",
@@ -163,10 +148,10 @@
       "pages": 176,
       "stock": 8,
       "rating": 4.6,
-      "image": "/images/books/javascript-the-good-parts.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz9FDPGJHkwiFZRHHLmXV0UMR4PmlA05NgOkwHN0PXvA&s"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "You Don't Know JS Yet",
       "author": "Kyle Simpson",
       "category": "Programming",
@@ -178,10 +163,10 @@
       "pages": 320,
       "stock": 11,
       "rating": 4.8,
-      "image": "/images/books/you-dont-know-js-yet.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPaQIHBPd4bKekAr8zSL2IcWCwK1awFizjoqhi3Y-39A&s=10"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "The Pragmatic Programmer",
       "author": "Andrew Hunt & David Thomas",
       "category": "Programming",
@@ -193,10 +178,10 @@
       "pages": 352,
       "stock": 9,
       "rating": 4.9,
-      "image": "/images/books/the-pragmatic-programmer.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaUas_0y9qyiw4vEj4RAVXuG5c9Dlo63xoCQa74ljCnA&s=10"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Harry Potter and the Sorcerer's Stone",
       "author": "J. K. Rowling",
       "category": "Fantasy",
@@ -208,10 +193,10 @@
       "pages": 320,
       "stock": 25,
       "rating": 4.9,
-      "image": "/images/books/harry-potter-1.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRd045GIovuVRKyCxWsC9tn-OdoHh5yS7zto8xzBs_sQ&s=10"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "The Hobbit",
       "author": "J. R. R. Tolkien",
       "category": "Fantasy",
@@ -223,10 +208,10 @@
       "pages": 310,
       "stock": 17,
       "rating": 4.8,
-      "image": "/images/books/the-hobbit.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr19ClgmwwRB4CIPKvMhZSLMqspa9Z7qGIC-b6ouUT1g&s=10"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "The Silent Patient",
       "author": "Alex Michaelides",
       "category": "Thriller",
@@ -238,10 +223,10 @@
       "pages": 336,
       "stock": 10,
       "rating": 4.5,
-      "image": "/images/books/the-silent-patient.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDWK_db7Z17WLwHbvv4H2SnMvV9-zZ7WQz3_Aejh1QQ&s=10"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Sapiens",
       "author": "Yuval Noah Harari",
       "category": "History",
@@ -253,10 +238,10 @@
       "pages": 498,
       "stock": 12,
       "rating": 4.9,
-      "image": "/images/books/sapiens.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrcmQEH5rplf-lZA87LtPMkWqWEtOvcx57fobFLrL9g&s=10"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Homo Deus",
       "author": "Yuval Noah Harari",
       "category": "History",
@@ -268,10 +253,10 @@
       "pages": 450,
       "stock": 9,
       "rating": 4.7,
-      "image": "/images/books/homo-deus.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM-dCglW7mGKlKL6B0OIXyAENweaOJEOUJx73uNeL8-g&s=10"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "The Lean Startup",
       "author": "Eric Ries",
       "category": "Business",
@@ -283,10 +268,10 @@
       "pages": 336,
       "stock": 13,
       "rating": 4.7,
-      "image": "/images/books/the-lean-startup.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDRHvNd5erSqB_V3omHKRu13PWeHwRhZHJN7GZYAVeLw&s=10"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Start With Why",
       "author": "Simon Sinek",
       "category": "Leadership",
@@ -298,10 +283,10 @@
       "pages": 256,
       "stock": 14,
       "rating": 4.8,
-      "image": "/images/books/start-with-why.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZ6n_GxyUmZLgWfrSgpgKqBzl45_2ejxhhfgg2yOoJQ&s=10"
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Can't Hurt Me",
       "author": "David Goggins",
       "category": "Motivation",
@@ -313,10 +298,10 @@
       "pages": 364,
       "stock": 10,
       "rating": 4.9,
-      "image": "/images/books/cant-hurt-me.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXI6PmsuoF8Rfwkez6fxKqjAuIZWJkK3DSoNqaRrULQ&s=10"
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "The 7 Habits of Highly Effective People",
       "author": "Stephen R. Covey",
       "category": "Self Help",
@@ -328,10 +313,10 @@
       "pages": 432,
       "stock": 16,
       "rating": 4.8,
-      "image": "/images/books/the-7-habits.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTyWJ88yHsGwCI0bKp8ccXQarGbqNVKdzTaCGRgFxP0w&s=10"
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Zero to One",
       "author": "Peter Thiel",
       "category": "Startup",
@@ -343,10 +328,10 @@
       "pages": 224,
       "stock": 12,
       "rating": 4.6,
-      "image": "/images/books/zero-to-one.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu87Yg9AYFk9P9pjGc_lyoo3q1JJTYIrKUMEqWv9FDwg&s=10"
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Rework",
       "author": "Jason Fried & David Heinemeier Hansson",
       "category": "Business",
@@ -358,10 +343,10 @@
       "pages": 288,
       "stock": 15,
       "rating": 4.5,
-      "image": "/images/books/rework.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KgWe50qt4C1Hi56263oGUDhgVrWpSHZNb4YGa7mrRw&s=10"
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "The Monk Who Sold His Ferrari",
       "author": "Robin Sharma",
       "category": "Self Help",
@@ -373,7 +358,38 @@
       "pages": 224,
       "stock": 18,
       "rating": 4.7,
-      "image": "/images/books/the-monk-who-sold-his-ferrari.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQIYy7beWEavguT7bNQbPp6F0d5IpuU2-gu3KA_oGlNw&s=10"
+    },
+    {
+      "name": "monkey-king",
+      "author": "sachin",
+      "category": "animal",
+      "price": 125,
+      "publishYear": 2026,
+      "publisher": "animal zoo",
+      "language": "english",
+      "isbn": "784512895623985623",
+      "pages": 150,
+      "stock": 200,
+      "rating": 4.5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGlfdbVV9h2eUbMtHOpbgHb69rccNGPQTah4P09pk0Ow&s",
+      "id": "9vSdKJRZKyA"
+    },
+    {
+      "name": "atomic",
+      "author": "sachin carter",
+      "category": "programming",
+      "price": 499,
+      "publishYear": 2018,
+      "publisher": "marvel",
+      "language": "english",
+      "isbn": "984653198456123",
+      "pages": 598,
+      "stock": 20,
+      "rating": 4.5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBiU4w2DqYhcEtZpoJ-c4NtDeI_Jt_ArjG0geJGtqBK_R5un8WscrTUjs&s=10",
+      "id": "nfpiR1q8y0U"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
