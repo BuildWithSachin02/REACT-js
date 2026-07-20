@@ -77,6 +77,7 @@ export default function Sidebar() {
         </li>
         <li>
           <Link
+          to={"/editbooks"}
             onClick={() => setActiveMenu("edit books")}
             className={`nav-link text-white ${activeMenu === "edit books" ? "active" : ""}`}
           >

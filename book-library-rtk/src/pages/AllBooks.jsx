@@ -1,9 +1,10 @@
 import { fetchBooks, DeleteBooks } from "../App/featuresSlicecs/booksSlices";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
+import { Link } from "react-router";
 
-export default function AllBooks() {
+export default function AllBooks({ setSendBookDetails }) {
   const dispatch = useDispatch();
   const { books } = useSelector((state) => state.books);
   // console.log(books);
@@ -23,7 +24,8 @@ export default function AllBooks() {
       confirmButtonText: "Yes, delete it!",
       cancelButtonText: "Cancel",
     });
-    if (result.isConfirmed) {//so isConfirmed where he come from and swal fire return a object like when user click on delete so he return a objects like this const result = {isConfirmed:true,.....} so there is come from
+    if (result.isConfirmed) {
+      //so isConfirmed where he come from and swal fire return a object like when user click on delete so he return a objects like this const result = {isConfirmed:true,.....} so there is come from
       dispatch(DeleteBooks(id));
 
       Swal.fire({
@@ -35,7 +37,11 @@ export default function AllBooks() {
       });
     }
   };
-  
+  const handleToSendBookDetails = (book) => {
+    setSendBookDetails(book);
+    console.log(book);
+  };
+
   return (
     <>
       <div className="container mt-4">
@@ -72,8 +78,14 @@ export default function AllBooks() {
                   </div>
 
                   <div className="d-grid gap-2">
-                    <button className="btn btn-primary">View Details</button>
-
+                    <Link className="" to={"/viewdetails"}>
+                      <button
+                        onClick={() => handleToSendBookDetails(book)}
+                        className="btn btn-primary w-100"
+                      >
+                        View Details
+                      </button>
+                    </Link>
                     <button
                       onClick={() => handleDelete(book.id)}
                       className="btn btn-outline-danger"

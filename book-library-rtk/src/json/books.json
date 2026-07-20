@@ -2,48 +2,51 @@
   "books": [
     {
       "id": "2",
-      "name": "Rich Dad Poor Dad",
+      "name": "Rich Dad Poor Dad Updated",
       "author": "Robert T. Kiyosaki",
-      "category": "Finance",
+      "category": "business",
       "price": 399,
       "publishYear": 1997,
       "publisher": "Plata Publishing",
       "language": "English",
-      "isbn": "9781612680194",
+      "isbn": 9781612680194,
       "pages": 336,
       "stock": 18,
       "rating": 4.8,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT2Zk6v_JxxB08JlN5xIkLORzjrUhJwBoVDb76jTL3Hg&s=10"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT2Zk6v_JxxB08JlN5xIkLORzjrUhJwBoVDb76jTL3Hg&s=10",
+      "description": "asdfdghjhsasasfgdhjgfsdafghjgfdsfoewifjdslkxmewfiojdsm,ewgnkm,gruidjkbnfvgyubhjmnae v"
     },
     {
       "id": "3",
-      "name": "The Psychology of Money",
+      "name": "The Psychology of Money Updated",
       "author": "Morgan Housel",
-      "category": "Finance",
+      "category": "finance",
       "price": 550,
       "publishYear": 2020,
       "publisher": "Harriman House",
       "language": "English",
-      "isbn": "9780857197689",
+      "isbn": 9780857197689,
       "pages": 256,
       "stock": 20,
       "rating": 4.8,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4e8GZDve-S3E7Z9MWbnBg6DxpIBHTSNmmSdMV6wip4g&s=10"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4e8GZDve-S3E7Z9MWbnBg6DxpIBHTSNmmSdMV6wip4g&s=10",
+      "description": "undefined"
     },
     {
       "id": "4",
       "name": "The Alchemist",
       "author": "Paulo Coelho",
-      "category": "Novel",
+      "category": "self help",
       "price": 350,
       "publishYear": 1988,
       "publisher": "HarperOne",
       "language": "English",
-      "isbn": "9780062315007",
+      "isbn": 9780062315007,
       "pages": 208,
       "stock": 22,
       "rating": 4.7,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKObImlUAPvpOpErbVvkMH2XDR1Bopzwj8WB0LlZMPvg&s=10"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKObImlUAPvpOpErbVvkMH2XDR1Bopzwj8WB0LlZMPvg&s=10",
+      "description": "undefined"
     },
     {
       "id": "5",

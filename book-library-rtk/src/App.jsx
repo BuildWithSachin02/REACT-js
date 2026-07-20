@@ -6,8 +6,11 @@ import Home from "./pages/Home";
 import DashBoard from "./components/DashBoard";
 import AllBooks from "./pages/AllBooks";
 import AddBooks from "./pages/AddBooks";
+import EditPages from "./pages/EditPages";
+import ViewDetails from "./pages/ViewDetails";
 
 export default function App() {
+  const [sendBookDetails, setSendBookDetails] = useState(null);//i want store when i click on view detail then after i click this button so that book-card save on this state and then i used in viewdetails jsx.
   return (
     <>
       <div className="">
@@ -18,7 +21,7 @@ export default function App() {
             path="/home"
             element={
               <ProtectedRoutes>
-                <Home />
+                <Home setSendBookDetails={setSendBookDetails} />
               </ProtectedRoutes>
             }
           />
@@ -27,6 +30,22 @@ export default function App() {
             element={
               <ProtectedRoutes>
                 <AddBooks />
+              </ProtectedRoutes>
+            }
+          />
+          <Route
+            path="/editbooks"
+            element={
+              <ProtectedRoutes>
+                <EditPages />
+              </ProtectedRoutes>
+            }
+          />
+          <Route
+            path="/viewdetails"
+            element={
+              <ProtectedRoutes>
+                <ViewDetails sendBookDetails={sendBookDetails} />
               </ProtectedRoutes>
             }
           />

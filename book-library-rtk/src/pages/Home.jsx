@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar";
 import AllBooks from "./AllBooks";
 import "./Home.css";
 
-export default function Home() {
+export default function Home({ setSendBookDetails }) {
   return (
     <>
       <div className="d-flex layout">
@@ -12,7 +12,7 @@ export default function Home() {
         <div className="ps-5 container content">
           <Navbar />
           <div className="mt-4 page-content">
-            <AllBooks/>
+            <AllBooks setSendBookDetails={setSendBookDetails} />
           </div>
         </div>
       </div>
