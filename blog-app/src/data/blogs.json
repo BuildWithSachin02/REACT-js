@@ -1,0 +1,95 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "What is Your Bank Balance ?",
+      "description": "A Core Banking System (CBS) is a centralized platform that allows customers to perform banking transactions from any branch. It improves efficiency, security, and customer experience by connecting all bank branches through a single system.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFx7OJbHCCNIuzdmS5xQ3vZq6LmvGhMHLis6LH1BaOzA&s=10",
+      "category": "Core Banking",
+      "author": "Sachin Yadav",
+      "publishDate": "2026-07-24T15:49:24.793Z"
+    },
+    {
+      "id": "2",
+      "title": "Benefits of Digital",
+      "description": "Digital banking enables customers to access banking services anytime and anywhere. Features such as online transfers, bill payments, and account management make banking faster and more convenient.",
+      "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800",
+      "category": "",
+      "author": "Sachin Yadav",
+      "publishDate": "2026-07-24T16:47:09.358Z"
+    },
+    {
+      "id": "3",
+      "title": "How Banks Protect Customer Data",
+      "description": "Banks use encryption, multi-factor authentication, firewalls, and continuous monitoring to protect customer information from cyber threats and unauthorized access.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800",
+      "category": "Cyber Security",
+      "author": "Sachin Yadav",
+      "publishDate": "2026-07-03"
+    },
+    {
+      "id": "4",
+      "title": "Importance of KYC in Banking",
+      "description": "Know Your Customer (KYC) helps banks verify customer identities, prevent fraud, and comply with financial regulations. Proper KYC improves trust and reduces financial crimes.",
+      "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800",
+      "category": "Banking Rules",
+      "author": "Sachin Yadav",
+      "publishDate": "2026-07-04"
+    },
+    {
+      "id": "5",
+      "title": "Online Banking vs Traditional Banking",
+      "description": "Online banking offers convenience and 24/7 access, while traditional banking provides face-to-face customer support. Modern banks combine both to improve customer satisfaction.",
+      "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=800",
+      "category": "Banking",
+      "author": "Sachin Yadav",
+      "publishDate": "2026-07-05"
+    },
+    {
+      "id": "6",
+      "title": "Types of Bank Accounts",
+      "description": "Banks offer savings accounts, current accounts, fixed deposits, and recurring deposits. Each account serves different financial needs and customer requirements.",
+      "image": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800",
+      "category": "Accounts",
+      "author": "Sachin Yadav",
+      "publishDate": "2026-07-06"
+    },
+    {
+      "id": "7",
+      "title": "Why Cyber Security is Important for Banks",
+      "description": "Cyber security protects banks from hacking, phishing, ransomware, and data breaches. Strong security measures ensure customer trust and business continuity.",
+      "image": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800",
+      "category": "Cyber Security",
+      "author": "Sachin Yadav",
+      "publishDate": "2026-07-07"
+    },
+    {
+      "id": "8",
+      "title": "How Loan Approval Works",
+      "description": "Banks evaluate income, credit history, repayment ability, and financial records before approving loans. A good credit score increases the chances of approval.",
+      "image": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800",
+      "category": "Loans",
+      "author": "Sachin Yadav",
+      "publishDate": "2026-07-08"
+    },
+    {
+      "id": "9",
+      "title": "Future of AI in Banking",
+      "description": "Artificial Intelligence helps banks automate customer service, detect fraud, analyze transactions, and provide personalized financial recommendations.",
+      "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800",
+      "category": "Technology",
+      "author": "Sachin Yadav",
+      "publishDate": "2026-07-09"
+    },
+    {
+      "title": "5 Easy Ways to Save Money Every Single Month",
+      "description": "Managing your money does not have to be hard or boring.With a few small changes to your daily habits, you can build a safer savings account.Start using these simple tips today and watch your bank account grow.",
+      "image": "https://images.unsplash.com/photo-1784729891999-cb51faad654c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "travel",
+      "author": "sachin yadav",
+      "publishDate": "2026-07-24T08:29:55.260Z",
+      "id": "_t8JXfD9eWg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

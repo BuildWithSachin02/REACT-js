@@ -1,0 +1,9 @@
+.sidebar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:280px;
+    height:100vh;
+    border-right: 2px solid gray;
+    border-radius: 30px;
+}
