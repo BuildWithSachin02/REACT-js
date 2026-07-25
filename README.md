@@ -2,7 +2,7 @@
 
 > A personal reference README covering everything you need to know about React.js — from basics to advanced concepts. Come back here whenever you need a quick refresher.
 
----
+----
 
 ## 📚 Table of Contents
 
