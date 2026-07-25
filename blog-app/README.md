@@ -1,16 +1,27 @@
-# React + Vite
+PS C:\Users\yadav\OneDrive\Desktop\REACT-js> git add .
+PS C:\Users\yadav\OneDrive\Desktop\REACT-js> git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   blog-app/src/APP/features/blogSlices.js
+        modified:   blog-app/src/componets/Navbar.jsx
+        modified:   blog-app/src/pages/CreateBlogs.jsx
+        modified:   blog-app/src/pages/Home.jsx
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+PS C:\Users\yadav\OneDrive\Desktop\REACT-js> git add .
+PS C:\Users\yadav\OneDrive\Desktop\REACT-js> git commit -m "New Project Blogs"
+[main a59a70e] New Project Blogs
+ 4 files changed, 5 insertions(+), 4 deletions(-)
+PS C:\Users\yadav\OneDrive\Desktop\REACT-js> git push origin main
+To https://github.com/BuildWithSachin02/REACT-js.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/BuildWithSachin02/REACT-js.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\yadav\OneDrive\Desktop\REACT-js> 
