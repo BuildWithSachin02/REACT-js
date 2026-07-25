@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../componets/Navbar";
-import { fetchBlogs } from "../APP/features/blogSlices";
+import { fetchBlogs, setSearch } from "../APP/features/blogSlices";
 import { useDispatch, useSelector } from "react-redux";
 import { formatDistanceToNow } from "date-fns";
 import { useNavigate } from "react-router";
@@ -31,7 +31,7 @@ export default function Home({ setSendBlogDetails }) {
         <Navbar />
         <div className="mt-5 d-flex justify-content-center flex-wrap gap-3">
           <div className="row g-4 mb-5 h-100">
-            {blogs.map((blog) => (
+            {filtredBlogs.map((blog) => (
               <div className="col-md-6 col-lg-4" key={blog.id}>
                 <div className="card shadow-sm border-0 rounded-3">
                   <img

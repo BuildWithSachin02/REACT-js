@@ -20,7 +20,7 @@ export default function () {
                 aria-label="Search"
               />
               <button
-                onClick={() => setSearch("")}
+                onClick={() => dispatch(setSearch(""))}
                 className="btn btn-outline-primary"
               >
                 Reset

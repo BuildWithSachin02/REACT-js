@@ -63,6 +63,7 @@ export default function CreateBlogs() {
       field.ref.current.value = "";
       return;
     });
+    setupdate(false);
   };
   const handleEdit = (blog) => {
     setEditIndex(blog);

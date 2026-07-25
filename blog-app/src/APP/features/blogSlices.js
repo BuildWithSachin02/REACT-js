@@ -110,5 +110,5 @@ const blogSlices = createSlice({
             });
     })
 })
-export const {setSearch} = blogSlices.actions
+export const { setSearch } = blogSlices.actions
 export default blogSlices.reducer
