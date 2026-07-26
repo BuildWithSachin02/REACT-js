@@ -2,7 +2,7 @@
 
 A modern Blog Management System built with **React.js**, **Redux Toolkit**, **React Router**, **Bootstrap**, **Axios**, and **JSON Server**. This application allows users to create, view, edit, delete, and search blog posts with a clean and responsive user interface.
 
----
+------
 
 ## 🚀 Features
 
