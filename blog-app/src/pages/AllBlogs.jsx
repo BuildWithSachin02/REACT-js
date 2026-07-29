@@ -41,7 +41,7 @@ export default function AllBlogs({ setSendBlogDetails }) {
   const handleToSendBlogDetails = (blog)=>{
     setSendBlogDetails(blog);
     navigate("/viewdetails");
-    console.log(blog) 
+    // console.log(blog) 
   }
 
   return (
