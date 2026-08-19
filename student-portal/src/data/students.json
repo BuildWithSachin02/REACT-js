@@ -1,0 +1,14 @@
+{
+    "student":[
+        {
+            "id":"123",
+            "name":"prince gond",
+            "maths":"89",
+            "english":"90",
+            "science":"99",
+            "score":"278",
+            "exam":"external",
+            "role":"10"
+        }
+    ]
+}
