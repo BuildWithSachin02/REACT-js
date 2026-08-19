@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-////////////////////////////////FETCH-API/////////////////////////////////////////////////////////
+////////////////////////////////FETCH-API////////////////////////////////////////////////////////
 //now we have first thing to call api and get data and check if user is already they have account
 export const userFetch = createAsyncThunk("users/fetch", async () => {//call API
     const res = await axios.get("http://localhost:3000/userAuth")
