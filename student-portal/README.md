@@ -1,3 +1,6 @@
+# output-link - http://127.0.0.1:14201/d/b1a75941bf88ecbd258725ecf98e3544
+# use this password - 1234
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
