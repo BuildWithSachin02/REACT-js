@@ -25,8 +25,8 @@ export default function Home() {
   const scienceRef = useRef();
   const examRef = useRef();
 
-  const handlePostStudents = (e) => {
-    e.preventDefault();
+  const handlePostStudents = () => {
+    // e.preventDefault();
 
     if (
       emailRef.current.value == "" ||

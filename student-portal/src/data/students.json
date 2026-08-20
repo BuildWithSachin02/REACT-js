@@ -1,13 +1,13 @@
 {
   "student": [
     {
+      "id": "QRFvDVfPbe4",
       "email": "datar@gmail.com",
-      "name": "datar",
+      "name": "Hitesh",
       "maths": "12",
-      "science": "16",
       "english": "15",
-      "exam": "internal",
-      "id": "QRFvDVfPbe4"
+      "science": "16",
+      "exam": "internal"
     },
     {
       "email": "pooja",

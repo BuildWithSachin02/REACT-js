@@ -1,22 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { act } from "react";
 
-export const fetchAdmin = createAsyncThunk("auth/signin", async ({ email, password }) => {
+export const fetchAdmin = createAsyncThunk("auth/signin", async ({ email, password }, { rejectWithValue }) => {
     try {
-        const res = await axios.get("http://localhost:3000/admin")
+        const res = await axios.get("http://localhost:3000/admin")//get the admin data
         const user = res.data.find((user) => (
             user.email == email && user.password == password
         ))
-        if (user) {
-            localStorage.setItem("isAuthenticated", "true");
-            alert("singin successfully")
-        } else {
-            alert("invalid inputs!")
+        if (!user) {
+            return rejectWithValue("invalid email and passwords")
         }
+        localStorage.setItem("isAuthenticated", "true")//important line for protectroute
+        return user;//this is most imp line
     } catch (error) {
-        throw error;
+        return rejectWithValue(error.message)
     }
 })
 
