@@ -26,9 +26,9 @@ export const deleteStudent = createAsyncThunk("delete/student", async (id) => {
         throw error
     }
 })
-export const editStudent = createAsyncThunk("edit/student", async (id) => {
+export const editStudent = createAsyncThunk("edit/student", async (student) => {
     try {
-        const res = await axios.put(`http://localhost:3003/student/${id}`, id)
+        const res = await axios.put(`http://localhost:3003/student/${student.id}`, student)
         return res.data
     } catch (error) {
         throw error
@@ -57,7 +57,7 @@ const studentSlice = createSlice({
             state.loader = true
         }).addCase(PostStudent.fulfilled, (state, action) => {
             state.loader = false
-            state.students = action.payload
+            state.students.push(action.payload)
         }).addCase(PostStudent.rejected, (state, action) => {
             state.error = action.error.message
         });
@@ -73,9 +73,12 @@ const studentSlice = createSlice({
             state.loader = true
         }).addCase(editStudent.fulfilled, (state, action) => {
             state.loader = false;
-            state.students = state.students.map((std) => (
-                std.id == action.payload.id
-            ))
+            state.students = state.students.map((std) => {
+                if (std.id == action.payload.id) {
+                    return action.payload
+                }
+                return std
+            })
         }).addCase(editStudent.rejected, (state, action) => {
             state.loader = false
             state.error = action.error.message

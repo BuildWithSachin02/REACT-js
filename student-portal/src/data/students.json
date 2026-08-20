@@ -1,14 +1,77 @@
 {
-    "student":[
-        {
-            "id":"123",
-            "name":"prince gond",
-            "maths":"89",
-            "english":"90",
-            "science":"99",
-            "score":"278",
-            "exam":"external",
-            "role":"10"
-        }
-    ]
+  "student": [
+    {
+      "email": "datar@gmail.com",
+      "name": "datar",
+      "maths": "12",
+      "science": "16",
+      "english": "15",
+      "exam": "internal",
+      "id": "QRFvDVfPbe4"
+    },
+    {
+      "email": "pooja",
+      "name": "pooja",
+      "maths": "4",
+      "science": "98",
+      "english": "48",
+      "exam": "external",
+      "id": "DN2AcqWpzqw"
+    },
+    {
+      "email": "pooja",
+      "name": "pooja",
+      "maths": "4",
+      "science": "98",
+      "english": "48",
+      "exam": "external",
+      "id": "BDzN8D84RpA"
+    },
+    {
+      "email": "pooja",
+      "name": "pooja",
+      "maths": "4",
+      "science": "98",
+      "english": "48",
+      "exam": "external",
+      "id": "89SzbeAl3aI"
+    },
+    {
+      "email": "pooja",
+      "name": "pooja",
+      "maths": "4",
+      "science": "98",
+      "english": "48",
+      "exam": "external",
+      "id": "pjpQgegOCI4"
+    },
+    {
+      "id": "CljdvGgQWmg",
+      "email": "pooja",
+      "name": "pooja sharma",
+      "maths": "4",
+      "english": "48",
+      "science": "98",
+      "exam": "external"
+    },
+    {
+      "email": "nilesh@gmail.com",
+      "name": "Nilesh Soham",
+      "maths": "65",
+      "science": "15",
+      "english": "56",
+      "exam": "external",
+      "id": "yoKa3Xg8Mn8"
+    },
+    {
+      "email": "prince@gmail.com",
+      "name": "Prince",
+      "maths": "89",
+      "science": "99",
+      "english": "90",
+      "exam": "external",
+      "id": "z8dHz0INTwI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
